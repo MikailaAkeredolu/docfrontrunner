@@ -1,0 +1,339 @@
+2017-01-17 - Updates (v1.0.11)
+--------------------------------------------------------------
+
+ - Updated Political Options plugin to v1.0.7.
+ - Updated Simple Theme Slider plugin to v1.0.6.
+ - Updated Plugin Installer extension to v0.9.7.
+ - Updated Sidebars extension to v0.8.4.
+ - Code cleanup and refactoring.
+
+
+ - Modified theme files:
+	style.css
+	extensions/plugin-installer/
+	extensions/sidebars/
+	framework/includes/extensions-manager/admin.php
+	framework/includes/extensions-manager/views/admin-home.php
+	framework/includes/extensions-manager/views/del-extension-confirmation.php
+	framework/includes/load-functions.php
+	framework/includes/options-builder/admin.php
+	framework/includes/options-builder/settings-object.php
+	framework/includes/options-builder/views/list-pages.php
+	framework/includes/themes-manager/admin.php
+	framework/includes/themes-manager/js/package-tags.js
+	framework/includes/themes-manager/load.php
+	framework/includes/themes-manager/settings-object.php
+	framework/includes/themes-manager/views/del-package-confirmation.php
+	framework/includes/themes-manager/views/del-packages-confirmation-all.php
+	framework/includes/themes-manager/views/del-theme-confirmation.php
+	framework/includes/themes-manager/views/download.php
+	framework/includes/themes-manager/views/theme-conf.php
+	framework/includes/themes-manager/views/themes-list.php
+	framework/libs/FormsBuilder.php
+	framework/libs/formsbuilder/builderview.php
+	framework/libs/formsbuilder/js/formsbuilder.js
+
+ - Modified plugin files:
+	political-options/political-options.php
+	simple_theme_slider/simple-theme-slider.php
+
+
+2017-01-13 - Updates and fixes (v1.0.10)
+--------------------------------------------------------------
+
+ - Updated Static Content Blocks plugin to v1.0.4.
+ - Fixed occasional misalignments on video page.
+
+ - Modified theme files:
+	style.css
+	assets/css/bootstrap.css
+	assets/css/bootstrap.min.css
+	assets/less/main.less
+	extensions/plugin-installer/
+	extensions/theme-utilities/hooks-filters.php
+	extensions/theme-utilities/post-type-static-block.php
+
+ - Modified plugin files:
+	static_content_blocks/post-type-static-block.php
+
+
+2016-12-03 - Updates and fixes (v1.0.9)
+--------------------------------------------------------------
+
+ - Updated Font Awesome to v4.7.0.
+ - Fixed videos not opening when first visiting a page that has videos on.
+
+ - Modified theme files:
+	archive-political-video.php
+	functions.php
+	style.css
+	assets/css/font-awesome.min.css
+	assets/fonts/FontAwesome.otf
+	assets/fonts/fontawesome-webfont.eot
+	assets/fonts/fontawesome-webfont.svg
+	assets/fonts/fontawesome-webfont.ttf
+	assets/fonts/fontawesome-webfont.woff
+	assets/fonts/fontawesome-webfont.woff2
+	templates/parts/home-layout-1.php
+
+
+2016-10-04 - Updates and fixes (v1.0.8)
+--------------------------------------------------------------
+
+ - Updated Political Options plugin to v1.0.6.
+ - Updated Plugin Installer extension to v0.9.5.
+ - Added enhanced Ninja Forms v3 compatibility for FrontRunner demo forms.
+ - Fixed a PHP notice.
+
+ - Modified theme files:
+	footer.php
+	functions.php
+	style.css
+	assets/css/bootstrap.css
+	assets/css/bootstrap.min.css
+	assets/less/main.less
+	extensions/plugin-installer/
+	extensions/theme-utilities/demo-data.php
+
+ - New theme files:
+	assets/js/nf3-helpers.js
+
+ - Modified plugin files:
+	political-options/common-functions.php
+	political-options/ninja-forms-settings.php
+	political-options/political-options.php
+
+
+2016-09-06 - Updates and fixes (v1.0.7)
+--------------------------------------------------------------
+
+ - Updated Plugin Installer extension to v0.9.4.
+ – Updated the Google Fonts list.
+ - Fixed date language and time format not correct on paginated events pages.
+
+ - Modified theme files:
+	style.css
+	data-types/font-select/data/web_fonts.json
+	extensions/plugin-installer/
+	extensions/theme-utilities/hooks-actions.php
+
+
+2016-07-13 - Updates, fixes and enhancements (v1.0.6)
+--------------------------------------------------------------
+
+ - Updated Political Options plugin to v1.0.5.
+ - Updated Plugin Installer extension to v0.9.2.
+ - Added Ninja Forms v3 compatibility.
+ - Added set event times using 24 hour clock.
+ - Added display event date in the format set in WordPress settings.
+ - Fixed slideshow won't display if it contains only one slide.
+
+ - Modified theme files:
+	archive-political-event.php
+	content-political-event.php
+	content-single-political-event.php
+	style.css
+	assets/js/owl.carousel.min.js
+	extensions/plugin-installer/
+
+ - Modified plugin files:
+	political-options/common-functions.php
+	political-options/ninja-forms-settings.php
+	political-options/political-options.php
+	political-options/assets/js/ninja-forms-settings.js
+	political-options/assets/js/political-options-event.js
+
+ - New plugin files:
+	political-options/assets/js/political-options-ninja-forms-v3.js
+
+
+2016-06-08 - Updates and fixes (v1.0.5)
+--------------------------------------------------------------
+
+ - Updated Political Options plugin to v1.0.4.
+ - Updated Font Awesome to v4.6.3.
+ - Updated Plugin Installer extension to v0.9.1.
+ - Fixed events that span dates expiring incorrectly.
+
+ - Modified theme files:
+	functions.php
+	style.css
+	assets/css/font-awesome.min.css
+	assets/fonts/FontAwesome.otf
+	assets/fonts/fontawesome-webfont.eot
+	assets/fonts/fontawesome-webfont.svg
+	assets/fonts/fontawesome-webfont.ttf
+	assets/fonts/fontawesome-webfont.woff
+	assets/fonts/fontawesome-webfont.woff2
+	extensions/plugin-installer/
+	extensions/theme-utilities/hooks-actions.php
+	templates/parts/home-section-events.php
+
+ - Modified plugin files:
+	political-options/assets/css/political-options-event.css
+	political-options/assets/js/political-options-event.js
+	political-options/common-functions.php
+	political-options/political-options.php
+
+
+2016-05-07 - Updates and fixes (v1.0.4)
+--------------------------------------------------------------
+
+ - Updated Static Content Blocks plugin to v1.0.3.
+ - Updated Ninja Forms plugin to v2.9.45.
+ - Fixed videos not loading.
+ - Fixed old WooCommerce code causing an error.
+
+ - Modified theme files:
+	functions.php
+	style.css
+	assets/js/theme-scripts.js
+	extensions/plugin-installer/plugins/
+
+ - Modified plugin files:
+	static_content_blocks/post-type-static-block.php
+
+
+2016-04-13 - Updates and fixes (v1.0.3)
+--------------------------------------------------------------
+
+ - Updated Political Options plugin to v1.0.3.
+ - Updated Ninja Forms plugin to v2.9.41.
+ - Added en_GB theme translation.
+ - Added en_GB translation to Political Options plugin.
+ - Fixed ambiguous install info in documentation.
+ - Fixed "Open link in a new tab" option not working in menu items.
+ - Fixed home page custom CSS not being added.
+ - Fixed PayPal options panel not appearing in form settings.
+
+ - Modified theme files:
+	style.css
+	assets/js/theme-scripts.js
+	extensions/custom-header/custom-header.php
+	extensions/plugin-installer/plugins/
+
+ - New theme files:
+	languages/en_GB.mo
+	languages/en_GB.po
+
+ - Modified plugin files:
+	political-options/ninja-forms-settings.php
+
+ - New plugin files:
+	political-options/languages/political-options-en_GB.mo
+	political-options/languages/political-options-en_GB.po
+
+
+2016-03-30 - Plugin update (v1.0.2.1)
+--------------------------------------------------------------
+
+ - Updated Political Options plugin to v1.0.2.
+
+ - Modified theme files:
+	style.css
+
+ - Modified plugin files:
+	political-options/
+
+
+2016-03-30 - Updates and fixes (v1.0.2)
+--------------------------------------------------------------
+
+ - Updated Simple Theme Slider plugin to v1.0.5.1.
+ - Updated Static Content Blocks plugin to v1.0.2-FR.
+ - Updated Ninja Forms plugin to v2.9.38.
+ - Fixed page title in header not in the middle in Safari.
+ - Fixed events timeline still displays when there are no events.
+ - Fixed PHP warning when using a Ninja Form shortcode in a content block.
+ - Added a custom page template for the home page.
+
+ - Modified theme files:
+	archive-political-event.php
+	front-page.php
+	style.css
+	assets/js/theme-scripts.js
+	extensions/plugin-installer/plugins/
+	extensions/theme-utilities/functions-helpers.php
+	extensions/theme-utilities/hooks-actions.php
+	templates/parts/header.php
+	templates/parts/home-section-main-content.php
+
+ - New theme files:
+	templates/homepage-1.php
+	templates/parts/home-layout-1.php
+
+ - Modified plugin files:
+	simple_theme_slider/
+	static_content_blocks/post-type-static-block.php
+
+
+2016-03-02 - Hotfixes (v1.0.1.1)
+--------------------------------------------------------------
+
+ - Fixed middle logo and nav menu not in the middle in Safari.
+ - Fixed home page header displaying most recent post’s featured image.
+
+ - Modified theme files:
+	style.css
+	assets/js/theme-scripts.js
+	extensions/theme-utilities/hooks-filters.php
+	templates/parts/header-large.php
+
+
+2016-02-25 - Updates, fixes and enhancements (v1.0.1)
+--------------------------------------------------------------
+
+ - Updated Political Options plugin to v1.0.1.
+ - Updated Simple Theme Slider plugin to v1.0.3.
+ - Updated Static Content Blocks plugin to v1.0.1.
+ - Updated Ninja Forms plugin to v2.9.33.
+ - Updated Font Awesome to v4.5.0.
+ - Updated documentation with best practice for creating a child theme.
+ - Updated events so that the month name is automatically displayed in the site language.
+ - Added timezone field to events.
+ - Added an option to add a link to the event title in the timeline event information.
+ - Disabled AJAX submit option in demo data for Ninja Form donation demo content.
+ - Fixed video "load more" functionality.
+ - Fixed timezone setting error message.
+ - Fixed error message when Action Links color not set.
+ - Fixed typo in PHP version error message.
+ - Fixed some missing translation strings.
+ - Fixed Visual Composer row settings not working in content blocks.
+
+ - Modified theme files:
+	archive-political-event.php
+	content-political-event.php
+	content-single-political-event.php
+	functions.php
+	style.css
+	assets/css/font-awesome.min.css
+	assets/fonts/FontAwesome.otf
+	assets/fonts/fontawesome-webfont.eot
+	assets/fonts/fontawesome-webfont.svg
+	assets/fonts/fontawesome-webfont.ttf
+	assets/fonts/fontawesome-webfont.woff
+	assets/fonts/fontawesome-webfont.woff2
+	extensions/bootstrap-navigation/wp-bootstrap-navwalker.php
+	extensions/theme-utilities/demo-data.php
+	extensions/theme-utilities/hooks-actions.php
+	extensions/theme-utilities/hooks-filters-theme-options.php
+	extensions/theme-utilities/hooks-filters.php
+	extensions/theme-utilities/meta-boxes.php
+	extensions/plugin-installer/plugins/
+	framework/load.php
+	templates/parts/home-section-action-links.php
+
+ - Modified plugin files:
+	political-options/assets/js/political-options-event.js
+	political-options/common-functions.php
+	political-options/ninja-forms-settings.php
+	political-options/political-options.php
+	simple_theme_slider/simple-theme-slider.php
+	static_content_blocks/content-blocks.php
+	static_content_blocks/post-type-static-block.php
+
+ 
+2015-10-23 - Release (v1.0.0)
+--------------------------------------------------------------
+
+ - Nothing changed.

@@ -1,0 +1,1076 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>FrontRunner WordPress Theme by Parallelus - Documentation</title>
+<link rel='stylesheet' id='font-awesome-css'  href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+<style type="text/css" media="screen">
+	body { font:16px/22px "Open Sans", "Segoe UI", sans-serif; color:#333; }
+	a:link,a:visited { color:#06c; }
+	a:hover,a:active { color:#09d; }
+	h1,h2,h3,h4,h5,h6 { margin:22px 0; line-height:1em; font-weight: 600; }
+	h1 { font-size: 32px; }
+	h2 { font-size: 28px; }
+	h3 { font-size: 22px; background: #f0f0f0; padding: 3px 11px 5px; line-height: 38px; border-radius: 2px; }
+	h4 { font-size: 21px; }
+	h5 { font-size: 18px; }
+	h6 { font-size: 16px; }
+	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong,
+	h1 b, h2 b, h3 b, h4 b, h5 b, h6 b {
+		font-weight: 700;
+	}
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+		font-size: .75em;
+		font-weight: 400;
+		color: #999;
+		margin: 0 0 0 12px;
+		top: -3px;
+		position: relative;
+	}
+	p { margin:0 0 22px; }
+	hr { background-color: #E3E3E3; border:0; height:1px; margin: 22px 0; }
+	code, .code {
+		/*font:12px/1.3 "Courier New",Courier,monospace;*/
+		font-family: "Courier New",Courier,monospace;
+		background-color:#eee;
+		padding:0 1px;
+		color:#555; }
+	pre { padding:15px 0; white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
+	pre code { overflow-x:auto; display:block; margin:0 0 15px; padding:18px; line-height:18px; font-size:13px; clear:both; color:#222; border:solid 1px #ddd; background:#F6F6F6 url(assets/images/pre-code-bg.gif) repeat 0 0; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; }
+	a img { border: 0; }
+	#Wrapper { width:1000px; margin:0 auto; }
+	#Content { width:730px; margin:0 0 0 270px; }
+	#Content img { max-width: 100%; height: auto; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
+	#Content img.no-shadow { box-shadow: none !important; }
+	#Content img.align-left { float: left; margin-right: 22px; margin-bottom: 22px }
+	#Content img.align-right { float: right; margin-left: 22px; margin-bottom: 22px }
+	#Content a[href="#top"] { text-decoration: none; font-size: 12px; font-weight: normal; text-transform: uppercase; margin: 2px 0 0; float: right;}
+	#TOC { float:left; position:fixed; top:0; bottom:0; margin:0; padding: 22px; background:#eee; overflow: auto; }
+	table,hr,.box { margin-bottom:25px; }
+	.sectionDivider { margin:0 0 50px; }
+	.sectionMargin { display:block; margin:0; padding:0 0 11px; }
+	.box p { margin-bottom:10px; }
+	.note, .important {
+		color: #CA4400;
+		background: #FFEDC1;
+		padding: 11px;
+		border-radius: 5px; }
+	.important {
+		color: #c70000;
+		background: #FFD8D8; }
+	.note code,
+	.important code {
+		background-color: rgba(255,255,255,.5);
+		padding: 2px 5px 3px;
+		top: -2px;
+		position: relative; }
+	.small { font-size:.9em; }
+	.clear { clear:both; }
+	.file { font-family:"Courier New",Courier,monospace; font-weight:700; }
+	#content ul { margin-top:20px; }
+	#content li { margin-top:15px; }
+</style>
+</head>
+<body>
+<div id="Wrapper"> <a name="top" style="position: absolute; top: 0;"></a>
+
+	<!-- Table of Contents
+	================================================== -->
+
+	<div id="TOC"> <a name="TOC"></a>
+		<p style="margin: 0 0 22px 0;"><a href="#top"><img src="assets/images/screenshot.png" alt="FrontRunner" style="max-width: 200px; height: auto;"></a></p>
+		<p><strong>Table of Contents</strong></p>
+		<ul style="margin: 0px; padding: 0; list-style-type: none; line-height: 1.8;">
+			<li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#about">About The Theme</a></li>
+			<li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#install">Installation</a></li>
+			<li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#child-theme">Child Themes</a></li>
+			<li>
+				<i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#theme-options">Theme Options</a>
+				<ul style="margin: 0px; padding: 0 0 0 1.25em; list-style-type: none; line-height: 1.8;">
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#theme-options-default">Default</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#theme-options-colors">Colors</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#theme-options-fonts">Fonts</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#theme-options-nav">Navigation</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#theme-options-footer">Footer</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#theme-options-login">Login</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#theme-options-advanced">Advanced</a></li>
+				</ul>
+			</li>
+			<li>
+				<i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#theme-content">Content</a>
+				<ul style="margin: 0px; padding: 0 0 0 1.25em; list-style-type: none; line-height: 1.8;">
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#home-page">Home Page</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#template-issues">Issues</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#template-events">Calendar Events</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#template-blog">Blog / News</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#template-videos">Videos</a></li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#template-landing">Landing Pages</a> </li>
+					<li><i class="fa fa-caret-right"></i>&nbsp; <a href="#template-misc">Other Templates</a></li>
+				</ul>
+			</li>
+			<li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#headers">Headers</a></li>
+			<li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#plugins">Plugins</a></li>
+			<li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#structure">File Structure</a></li>
+			<!-- <li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#resources">Resources</a></li> -->
+			<li><i class="fa fa-chevron-circle-right"></i>&nbsp; <a href="#suport">Support</a></li>
+		</ul>
+	</div>
+
+
+	<!-- Main Content
+	================================================== -->
+
+	<div id="Content">
+
+		<h1><strong>FrontRunner - WordPress Political Theme</strong></h1>
+		<div>
+			<p>
+				<strong>
+					Created: September 10th, 2015<br />
+					By: <a href="http://themeforest.net/user/Parallelus" target="_blank">Parallelus</a><br />
+				</strong>
+			</p>
+
+			<h4>Thank you for purchasing this WordPress theme!</h4>
+			<p>We take great pride in creating our products and are excited you have chosen our theme for your website. Our hope is for the theme to take the hard work out of building a website so you can focus on growing your business instead of developing a website. We hope you get as much enjoyment from using the theme as we did creating it. </p>
+			<p>Feedback and suggestions are always welcomed so don't hesitate to leave comments. If you have questions not answered by this document, please visit the <a href="http://para.llel.us/support/" target="_blank">Help Center</a>. If you are happy with the theme please take a moment to rate it on the ThemeForest website.</p>
+			<p>Thank you,<br> The Parallelus Team</p>
+		</div>
+
+
+		<!-- About
+		================================================== -->
+
+		<a name="about" class="sectionMargin"></a>
+		<h3><strong>About The Theme</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<p>This theme is designed for use with WordPress v4.3 or higher. The code was written to be backwards compatible where possible, however we recommend you use the current WP version when possible. If you are not using WordPress 4.3 or a later version, we recommend you upgrade your site before installation.</p>
+
+			<p>There are custom feautes in the theme to make it easy to configure. Using these features you can change colors, graphics and other design settings. Some functionality is enabled using Plugins. You will be prompted to install these plugins after installing the theme, or access them from the <b>"Settings &gt; Plugin Installer"</b> admin screen. In the sections below we have details to help learn how to use the theme. Please review this information and you have problems, let us know how we can help.</p>
+
+			<h4>Customer Support</h4>
+			<p>Although every effort has been made to ensure the template is bug free and easy to use, there is always a chance errors may occur. If you do find a problem please notify us immediately through our <a href="http://themeforest.net/user/Parallelus" target="_blank">ThemeForest Author Page</a> or get support from our <a href="http://para.llel.us/support/" target="_blank">Help Center</a>. This will ensure it gets fixed as quickly as possible.</p>
+			<p><strong>Visit our <a href="http://para.llel.us/support/" target="_blank">Help Center</a> for customer support.</strong></p>
+			<p>If you find yourself needing help, visit our <a href="http://para.llel.us/support/" target="_blank">Help Center</a> where you can post questions, read tutorials, view videos and more.</p>
+
+			<h4>Need the HTML version?</h4>
+			<p>There is also an HTML version available here: <a href="http://para.llel.us/+/get-frontrunner-html" target="_blank">Political HTML Template - FrontRunner</a></p>
+
+		</blockquote>
+
+
+
+		<!-- Installation
+		================================================== -->
+
+		<a name="install" class="sectionMargin"></a>
+		<h3><strong>Installation</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<p>Installing the theme can be done two ways. You can upload the theme ZIP file using the built in WordPress theme upload, or copy the files through an FTP client.</p>
+			<h5>1) Using WordPress Theme Upload</h5>
+			<p class="important"><strong>IMPORTANT:</strong> Be sure to extract the file "<span class="file">theme-frontrunner-vX.X.X.zip</span>" from the ThemeForest download before uploading. Using the ThemeForest ZIP file directly will result in a "Missing Style Sheet" error.</p>
+			<ol>
+				<li>Login to your WordPress admin.</li>
+				<li>In the <strong>"Appearance &gt; Themes"</strong> menu click the button <strong>"Add New"</strong>.</li>
+				<li>At the top of the page click, <strong>"Upload Theme"</strong>, then click the file input to select a file.</li>
+				<li>Select the zipped theme file, "<span class="file">theme-frontrunner-vX.X.X.zip</span>", and click <strong>"Install Now"</strong></li>
+				<li>After installation you will receive a success message confirming your new install.<strong></strong></li>
+				<li>Click the link <strong>"Activate"</strong></li>
+			</ol>
+			<h5>2) Uploading by FTP</h5>
+			<ol>
+				<li>Login to your FTP server and navigate to your WordPress themes directory. <br>
+					Normally this would be <strong>"wp-content/themes"</strong></li>
+				<li>Extract the files from the zipped theme.</li>
+				<li>Copy the folder "<span class="file">parallelus-frontrunner</span>" to your themes directory.</li>
+				<li>After the files finish uploading, login to your WordPress admin.</li>
+				<li>In the <strong>"Appearance"</strong> menu click <strong>"Themes"</strong></li>
+				<li>Click <strong>"Activate"</strong> for the theme <strong>"FrontRunner"</strong></li>
+			</ol>
+
+			<hr>
+
+			<h5><strong>Activate the Theme</strong></h5>
+			<p>Once the theme is installed, you can activate it from &quot;<strong>Appearance &gt; Themes</strong>&quot; by clicking the &quot;<strong>Activate</strong>&quot; link for &quot;<strong>FrontRunner</strong>&quot;.</p>
+
+			<hr>
+
+			<h5>Enabling Permalinks</h5>
+			<p>After installing the theme you should setup your permalinks. Navigate to <strong>Settings &gt; Permalinks</strong> and select "<strong>Post name</strong>" as the new setting. You can optionally choose any of the options, except "Default", for this value. </p>
+
+			<hr>
+
+			<h5>Demo Data <span>(Optional)</span></h5>
+			<p>A full demo content file is included with this theme, <strong>"demo-content-frontrunner.xml"</strong>. After importing this data you will have the full structure of the demo website. Doing this is optional and you can decide if you want to use the demo data. Sometimes it is better to import the demo content to a test website and use it as a reference rather than directly adding it to your production or development website.</p>
+			<p>To import a WordPress demo content file, go to <b>"Tools &gt; Import"</b> and select the WordPress importer. Plugin settings do not import automatically. You will have to configure the included plugins with your settings manually.</p>
+
+			<p class="note"><strong>NOTE:</strong> The demo content does not include media files such as images and videos. These are copyrighted materials and it may be illegal to distribute or download them without a license from the copyright owner.</p>
+
+			<hr>
+
+			<h5>Finished with Installation?</h5>
+			<p>Once the theme is installed you can configure it for your content. See the sections below on configuring the theme  to start adding your content.</p>
+
+		</blockquote>
+
+
+		<!-- Child Theme
+		================================================== -->
+
+		<a name="child-theme" class="sectionMargin"></a>
+		<h3><strong>Creating a Child Theme</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<p>A safe way to make custom template files and modify the code without directly editing the theme is by using a WordPress child theme. There are a few extra steps required with this theme to make a child theme. These steps are detailed here.</p>
+
+			<p>You can view the full instructions for making a WordPress child theme here <a href="https://codex.wordpress.org/Child_Themes" target="_blank">WordPress Child Themes</a></p>
+
+			<h5>1. Give the child theme a name</h5>
+			<p>Inside the <b>"wp-content/themes"</b> folder create a new folder with your child theme name, for example we will call ours <b>"victory"</b>.</p>
+
+			<h5>2. Add a style sheet</h5>
+			<p>Create a file inside the "victory" folder named <b>"style.css"</b> with the following content:</p>
+
+<pre><code>/*
+Theme Name: Victory
+Description: Child of FrontRunner theme by Parallelus
+Author: Your Name
+Template: parallelus-frontrunner
+Version: 1.0
+Tags: responsive-layout,custom-menu,featured-images,theme-options,threaded-comments,translation-ready
+*/
+</code></pre>
+
+			<h5>3. Enqueue the parent theme style sheet</h5>
+			<p>Create a file inside the "victory" folder named <b>"functions.php"</b> with the following content:</p>
+
+<pre><code>&lt;?php
+add_action('wp_enqueue_scripts','theme_enqueue_styles');
+function theme_enqueue_styles() {
+  wp_enqueue_style('parent-style',get_template_directory_uri().'/style.css');
+}
+?&gt;
+</code></pre>
+
+			<h5>4. Copy the assets</h5>
+			<p style="margin-bottom:10px">Copy the entire <b>"assets"</b> folder from the <b>"parallelus-frontrunner"</b> directory into the new <b>"victory"</b> theme folder.</p>
+			<p class="important"><strong>IMPORTANT:</strong> When you update the parent theme, remember to also update the '<strong>assets</strong>' folder in the child theme, i.e. copy that folder across again from the parent theme folder to the child theme folder, overwriting the old '<strong>assets</strong>' folder.</p>
+
+			<h5 style="margin-top:2em">5. Copy the data settings</h5>
+			<p style="margin-bottom:10px">Make a <b>"data"</b> folder in the child directory and copy the <b>"data/pages"</b> folder from the FrontRunner theme into the child theme's <b>"data"</b> folder.</p>
+			<p class="important"><strong>IMPORTANT:</strong> When you update the parent theme, remember to also update the '<strong>data/pages</strong>' folder in the child theme, i.e. copy the '<strong>data/pages</strong>' folder across again from the parent theme folder into the child theme's '<strong>data</strong>' folder, overwriting the old '<strong>pages</strong>' folder.</p>
+
+			<h5 style="margin-top:2em">6. Activate and setup the child theme</h5>
+			<p>First, go to <b>Appearance &gt; Themes</b> and activate the <b>Victory</b> theme.</p>
+			<p>Next, go to <b>Appearance &gt; Menus &gt; Theme Locations</b> and make sure the menu options are set to the correct menus.</p>
+			<p class="note"><strong>NOTE:</strong> Child themes have their own settings, which means that the child will begin with default settings. It won't inherit the parent theme's settings.</p>
+
+		</blockquote>
+
+
+		<!-- Theme Options
+		================================================== -->
+
+		<a name="theme-options" class="sectionMargin"></a>
+		<h3><strong>Theme Options</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<p><b>FrontRunner &gt; Theme Options</b></p>
+
+			<p>Broken into tabs and sections, there are options for a number of theme styles and settings, also many of the plugin specific featues can be modified using theme options. The notes below describe the settings.</p>
+
+		</blockquote>
+
+
+		<!-- Theme Options: Default
+		================================================== -->
+
+		<a name="theme-options-default" class="sectionMargin"></a>
+		<h4><strong>Theme Options: Default</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5>FrontRunner &gt; Theme Options: Default</h5>
+
+			<p><img src="assets/images/options-theme-default-tabs.png" alt="Theme Options: Default"></p>
+			<p>This tab contains basic settings for general site settings, design options and configuring the theme functionality options.</p>
+
+			<h5>Identity</h5>
+			<p><img src="assets/images/options-theme-default-identity.png" alt="Theme Options: Default - Identity"></p>
+			<p>The settings for your default logo and favorites icon. The logo selected here will be used in the top navigation menu. This should be the slightly smaller version of your logo (if you have one) to fit the space. The larger version of your logo, as used on the home page, is specified in the <b>"FrontRunner &gt; Home Page"</b> settings.</p>
+			<p><img src="assets/images/options-theme-default-identity-1.png" alt="Theme Options: Default - Identity Sample"></p>
+			<p><b>Additional Resources:</b></p>
+			<ul>
+				<li>Learn about <a href="http://www.webdesignerdepot.com/2012/11/whats-the-point-of-favicons/" target="_blank">Favorites Icons</a></li>
+			</ul>
+
+			<h5>Headers</h5>
+			<p><img src="assets/images/options-theme-default-headers.png" alt="Theme Options: Default - Headers"></p>
+			<p>The headers can show background colors and titles. To enable a section of the site to use custom header graphics, select the area under <b>Use Page Headers</b>. Optionally specify the size of the header height if you want to modify the default value. Individual headers can be configured in the settings for pages, posts and many of the custom content types included with the theme. These page level settings override the defaults set here.</p>
+			<p><b>More about <a href="#headers">Headers</a></b></p>
+
+			<h5>Issues Post Type</h5>
+			<p><img src="assets/images/options-theme-default-issues.png" alt="Theme Options: Default - Isuues"></p>
+			<p>When listing issues on the site you can either list all items with full text, or show excerpts and link to the full content on another page. This setting will configure the display option.</p>
+			<p><b>More about the <a href="#template-issues">Issues Content Type</a>.</b></p>
+
+			<h5>Error Pages</h5>
+			<p><img src="assets/images/options-theme-default-error.png" alt="Theme Options: Default - Errors"></p>
+			<p><b>Details about Error Pages are in the <a href="#template-misc">Other Templates</a> section.</b></p>
+
+		</blockquote>
+
+
+		<!-- Theme Options: Colors
+		================================================== -->
+
+		<a name="theme-options-colors" class="sectionMargin"></a>
+		<h4><strong>Theme Options: Colors</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5>FrontRunner &gt; Theme Options: Colors</h5>
+
+			<p><img src="assets/images/options-theme-colors-tabs.png" alt="Theme Options: Colors"></p>
+			<p>This tab contains default color setting for the theme links and accent colors.</p>
+
+			<h5>Links</h5>
+			<p><img src="assets/images/options-theme-colors-links.png" alt="Theme Options: Colors - Links"></p>
+			<p>The link colors set the value for HTML link elements, <code>&lt;a&gt;</code>. Some elements, such as post titles, will only receive the hover state color because the colors specified in the "Fonts" tab are used for headings and titles.</p>
+
+			<h5>Accent Colors</h5>
+			<p><img src="assets/images/options-theme-colors-accentcolors.png" alt="Theme Options: Colors - Accent Colors"></p>
+			<p>Accent colors are used to control the primary colors settings. </p>
+			<p><img src="assets/images/options-theme-colors-accentcolors-1.png" alt="Theme Options: Colors - Accent Samples - 1"></p>
+			<p>If you have not specified colors in the <b>"Navigation"</b> tab, the <i>Accent Color 1</i> and <i>Accent Color 2</i> will be used for the Main and Alternate menus. Accent 1 is also used as the primary background color for the logo area on the home page.</p>
+			<p><img src="assets/images/options-theme-colors-accentcolors-2.png" alt="Theme Options: Colors - Accent 2"></p>
+			<p>Background colors of special block elements such as the Newsletter and Quick Donate forms use <i>Accent Color 2</i> and special action links and buttons will use Accent Color 3, such as the "Continue" link on landing pages.</p>
+
+			<p><img src="assets/images/options-theme-colors-accentcolors-3.png" alt="Theme Options: Colors - Accent 3"></p>
+			<p class="note"><strong>NOTE:</strong> Accent colors will only be used for the navigation if styles have not been assigned in the "Navigation" tab.</p>
+
+			<br>
+
+			<h6>Helper Classes</h6>
+			<p>There are a few custom classes you can use to apply accent colors to your own content. Below are examples of these classes and how to use them.</p>
+
+			<p><b>Accent Color Text</b> - Set the text color with the class: <br><code>accent-1-text</code>, <code>accent-2-text</code>, <code>accent-3-text</code></p>
+<pre><code>&lt;span class=&quot;accent-1-text&quot;&gt;Accent Color 1 Text&lt;/span&gt;
+&lt;span class=&quot;accent-2-text&quot;&gt;Accent Color 2 Text&lt;/span&gt;
+&lt;span class=&quot;accent-3-text&quot;&gt;Accent Color 3 Text&lt;/span&gt;</code></pre>
+
+			<p><b>Accent Color Background</b> - Set the background color with the class: <br><code>accent-1-bg</code>, <code>accent-2-bg</code>, <code>accent-3-bg</code></p>
+<pre><code>&lt;div class=&quot;accent-1-bg&quot;&gt;
+	&lt;!-- Your content here --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;accent-2-bg&quot;&gt;
+	&lt;!-- Your content here --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;accent-3-bg&quot;&gt;
+	&lt;!-- Your content here --&gt;
+&lt;/div&gt;</code></pre>
+
+			<p><b>Accent Color 2</b> - Container box with background color <code>accent-box</code></p>
+<pre><code>&lt;div class=&quot;accent-box&quot;&gt;
+	&lt;!-- Your content here --&gt;
+&lt;/div&gt;</code></pre>
+
+			<p><b>Accent Color 3</b> - Continue Link using class <code>continue-link</code></p>
+<pre><code>&lt;a href=&quot;/&quot; class=&quot;continue-link&quot;&gt;Continue&lt;/a&gt;</code></pre>
+
+		</blockquote>
+
+
+		<!-- Theme Options: Fonts
+		================================================== -->
+
+		<a name="theme-options-fonts" class="sectionMargin"></a>
+		<h4><strong>Theme Options: Fonts</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5>FrontRunner &gt; Theme Options: Fonts</h5>
+
+			<p><img src="assets/images/options-theme-fonts-tabs.png" alt="Theme Options: Fonts"></p>
+			<p>This tab contains default fonts for the theme.</p>
+
+			<h5>Body Font</h5>
+			<p><img src="assets/images/options-theme-fonts-body.png" alt="Theme Options: Fonts - Body"></p>
+			<p>Choose a font for the main theme content. Select a standard font or Google Web font.</p>
+
+			<h5>Heading Font</h5>
+			<p><img src="assets/images/options-theme-fonts-heading.png" alt="Theme Options: Fonts - Heading"></p>
+			<p>Choose a font for the titles and headings. Select a standard font or Google Web font. You can specify sizes for the individual heading elements <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>.</p>
+
+			<h6>Standard Font Options</h6>
+			<p><img src="assets/images/options-theme-fonts-body-standard.png" alt="Theme Options: Fonts - Standard"></p>
+			<p>Choosing a standard font you should only select <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">web safe fonts</a>.</p>
+
+			<h6>Google Font Options</h6>
+			<p><img src="assets/images/options-theme-fonts-body-google.png" alt="Theme Options: Fonts - Google"></p>
+			<p>Using a Google font there are a few things you can do to ensure it displays well.</p>
+			<p>Google fonts will only download the specified font weights, so if you intend to use the font in both bold and normal weights, these need to be included in the weight setting as a comma separated list. For example: <code>400,600,800</code>. The weight you want to be the default used by headings should be listed first, for example: <code>800,400,600</code>. This will ensure the 800 bold is assigned as the default heading font weight while still loading the other weights for use in other areas of the site.</p>
+			<p>All selected font weights are included in both normal and italic styles. Only select the italic style if you intend for that to be the default heading style.</p>
+			<p>To preview different Google fonts go to: <a href="https://www.google.com/fonts" target="_blank">google.com/fonts</a>.</p>
+
+		</blockquote>
+
+
+		<!-- Theme Options: Navigation
+		================================================== -->
+
+		<a name="theme-options-nav" class="sectionMargin"></a>
+		<h4><strong>Theme Options: Navigation</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5>FrontRunner &gt; Theme Options: Navigation</h5>
+
+			<p><img src="assets/images/options-theme-nav-tabs.png" alt="Theme Options: Navigation"></p>
+			<p>You can customize the colors of the menus from this area. You do not have to set all colors. Anything unset will be generated automatically by the theme.</p>
+
+			<h5>Main Menu</h5>
+			<p>The main menu appears on the left side of the horizontal navigation bar and at the top of the vertical navigation.</p>
+
+			<h5>Menu (alternate)</h5>
+			<p>The alternate menu appears on the right side of the horizontal navigation bar and at the bottom of the vertical navigation.</p>
+
+			<p><img src="assets/images/menu-location-horizontal.png" alt="Menu Horizontal"></p>
+			<p><img src="assets/images/menu-location-vertical.png" alt="Menu Vertical"></p>
+
+
+			<h6>Assigning Menus</h6>
+			<p>To assign a WordPress menu to one of the theme's locations, go to <b>"Appearance &gt; Menus"</b> and select a menu. Use the <b>"Menu Settings"</b> at the bottom of the menu options to specify where it should appear in the theme.</p>
+			<p><img src="assets/images/menu-select.png" alt="Menu Select"></p>
+			<p><img src="assets/images/menu-location-settings.png" alt="Menu Settings"></p>
+
+		</blockquote>
+
+
+		<!-- Theme Options: Footer
+		================================================== -->
+
+		<a name="theme-options-footer" class="sectionMargin"></a>
+		<h4><strong>Theme Options: Footer</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5>FrontRunner &gt; Theme Options: Footer</h5>
+
+			<p><img src="assets/images/options-theme-footer-tabs.png" alt="Theme Options: Footer"></p>
+			<p>You can customize the colors of the menus from this area. You do not have to set all colors. Anything unset will be generated automatically by the theme.</p>
+
+			<h5>Content Area</h5>
+			<p><img src="assets/images/options-theme-footer-contentarea.png" alt="Theme Options: Footer - Content Area"></p>
+			<p>The content area of the footer has several options for assigning a logo, setting background styles and specifying a content source.</p>
+			<p><img src="assets/images/options-theme-footer-contentarea-1.png" alt="Theme Options: Footer - Content Area diagram"></p>
+
+			<h5>Social Icons</h5>
+			<p><img src="assets/images/options-theme-footer-socialicons.png" alt="Theme Options: Footer - Social Icons"></p>
+			<p>Include social icons directly into the footer using the options. To disable this feature, set the "Visibility" option to "Hide".</p>
+			<p><img src="assets/images/options-theme-footer-socialicons-1.png" alt="Theme Options: Footer - Social Icons diagram"></p>
+
+			<h5>Footer Overlap</h5>
+			<p><img src="assets/images/options-theme-footer-overlap.png" alt="Theme Options: Footer - Overlap"></p>
+			<p>Add content to the overlap container. You can choose any form created with the Ninja Forms plugin or select a content area from Content Blocks.</p>
+			<p>When selecting a Ninja Form, you can enable the form title in the "Settings" tab to add text before the form fields.</p>
+			<p><b>Forms &gt; Edit &gt; Settings</b></p>
+			<p><img src="assets/images/options-theme-footer-nf-title.png" alt="Theme Options: Footer - Overlap NF Title"></p>
+
+		</blockquote>
+
+
+		<!-- Theme Options: Login Screen
+		================================================== -->
+
+		<a name="theme-options-login" class="sectionMargin"></a>
+		<h4><strong>Theme Options: Login Screen</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5>FrontRunner &gt; Theme Options: Login Screen</h5>
+
+			<p><img src="assets/images/options-theme-loginscreen.png" alt="Theme Options: Footer - Login Screen"></p>
+			<p>Details about the Login Screen are in the <a href="#login-screen-options">Other Templates</a> section of this document.</p>
+
+		</blockquote>
+
+
+		<!-- Theme Options: Advanced
+		================================================== -->
+
+		<a name="theme-options-advanced" class="sectionMargin"></a>
+		<h4><strong>Theme Options: Advanced</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5>FrontRunner &gt; Theme Options: Advanced</h5>
+
+			<p><img src="assets/images/options-theme-advanced-tabs.png" alt="Theme Options: Advanced"></p>
+			<p>Add custom CSS and JavaScript to the theme.</p>
+
+			<p class="important"><strong>IMPORTANT:</strong> You should <b>not</b> include <code>&lt;script&gt;</code> tags in the JavaScript added to the Advanced theme options.</p>
+
+		</blockquote>
+
+
+		<!-- Home Page
+		================================================== -->
+
+		<a name="theme-content" class="sectionMargin"></a>
+		<h3><strong>Content</strong> <a href="#top">top</a></h3>
+
+		<a name="home-page" class="sectionMargin"></a>
+		<h4><strong>Home Page</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<p>The home page is designed as a welcome screen with small sections of content from other areas of the site. It can include a selection of videos, articles from the blog, upcoming events and more. The default home page features a large header image and action buttons directly below the header.</p>
+
+			<p>The default theme styled home page is only shown when you have the WordPress Reading settings for <b>"Front page displays"</b> configured to <b>"Your latest posts"</b>. If you specify an alternate setting and configure the front page setting to <b>"A static page"</b> it will override the entier home page. Using "A static page" will tell the theme to show that page using the specified template in the page settings. This completely overrides the theme's home page options in favor of a page template.</p>
+			<p><img src="assets/images/settings-reading-frontpage.png" alt="Settings - Reading - Front page"></p>
+			<p>Change this setting by going to <b>"Settings &gt; Reading"</b> in the WordPress admin.</p>
+
+			<p>To enable and disable different sections of the home page, use the theme options located in <b>"FrontRunner > Home Page"</b>. Each content section has been organized into a tab where there are individual settings for each section.</p>
+
+			<h6>Home - Header</h6>
+			<p><img src="assets/images/homepage-header-1.png" alt="Home - Header 1"></p>
+			<p>The header area scales with the browser to create a consistant display across all devices and screen sizes. It is designed to display at a <strong>16:9</strong> ratio such as <strong>1920px &times; 1080px</strong>.</p>
+			<p>The default home page features a unique logo and menu format. The logo area could be used to place a campaign sign or other graphic a visitior might already recognize. Alternatively it can show a traditional logo image of any size.</p>
+			<p><img src="assets/images/homepage-header-2.png" alt="Home - Header 2"></p>
+			<p>The alternate home page style uses the same ratio but applies a more traditional menu and logo placement at the top of the screen.</p>
+			<p><img src="assets/images/options-home-page-header.png" alt="Theme Options - Home Page - Header"></p>
+
+			<h6>Home - Action Links</h6>
+			<p><img src="assets/images/homepage-action-links.png" alt="Home - Action Links"></p>
+			<p>These links can be used as "call to action" buttons. They are vertically aligned to show half in the header and half in the area below. The buttons support background images.</p>
+			<p><img src="assets/images/options-home-page-actionlinks.png" alt="Theme Options - Home Page - Action Links"></p>
+			<p>Each of the four Action Link sections has individual settings for the color, background image, link and text. Set these as needed. You can hide any links you don't need to disable that section and the display will adjust on the home page.</p>
+
+			<h6>Home - Top Content</h6>
+			<p><img src="assets/images/homepage-section-1.png" alt="Home - Top Content "></p>
+			<p><img src="assets/images/options-home-page-topcontent.png" alt="Theme Options - Home Page - Top Content"></p>
+			<p>The Top Content section is more flexible, allowing you to select a Content Block for the content source. Content Blocks have the ability to use the WordPress editor to create virtually any content needed. In the demo site we used the content shown below. You can paste this into a Content Block using the "text" editor tab and with auto paragraphs off.</p>
+
+<pre><code>&lt;blockquote class=&quot;big-quote&quot; style=&quot;margin-top:0;&quot;&gt;&amp;ldquo;Together &lt;em&gt;we the people&lt;/em&gt; achive more than any single person could ever do alone. It is time to move beyond partisanship and &lt;em&gt;build a stronger tomorrow&lt;/em&gt;.&amp;rdquo;&lt;/blockquote&gt;
+
+&lt;p class=&quot;section-more text-center&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot;&gt;More About Tim&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+
+			<h6>Home - Videos</h6>
+			<p><img src="assets/images/homepage-section-2.png" alt="Home - Videos"></p>
+			<p><img src="assets/images/options-home-page-videos.png" alt="Theme Options - Home Page - Videos"></p>
+			<p>The videos sections pulls items directly from the Political Options custom content type, Videos. By default it will show the most recently added vidoes for the selected category. For more control over which videos are shown, create a custom category and add only the videos you want shown on the home page to that category. Select the category from the video options.</p>
+			<p>The "More" button links to the videos list page with all videos. To hide the button, delete the text in the "More Button" field.</p>
+
+			<h6>Home - Default Content</h6>
+			<p><img src="assets/images/homepage-section-3.png" alt="Home - Default Content"></p>
+			<p><img src="assets/images/options-home-page-defaultcontent.png" alt="Theme Options - Home Page - Default Content"></p>
+			<p>This section displays the blog posts, the default content for WordPress. You can override this and specify for the content to be set to a Content Block instead or restrict the results to a single category of posts.</p>
+
+			<h6>Home - Slideshow</h6>
+			<p><img src="assets/images/homepage-section-4.png" alt="Home - Slideshow"></p>
+			<p><img src="assets/images/options-home-page-slideshow.png" alt="Theme Options - Home Page - Slideshow"></p>
+			<p>Select a slide show from the included plugin, "Simple Theme Sliders", or using the "Slider Revolution" plugin.</p>
+
+			<h6>Home - Events</h6>
+			<p><img src="assets/images/homepage-section-5.png" alt="Home - Events"></p>
+			<p><img src="assets/images/options-home-page-events.png" alt="Theme Options - Home Page - Events"></p>
+			<p>The events sections pulls items directly from the Political Options custom content type, Events. This will show only future events for the selected category. For more control over which videos are shown, create a custom category and add only the events you want on the home page to the category.</p>
+			<p>The "More" button links to the events list page with the full events list. To hide the button, delete the text in the "More Button" field.</p>
+
+			<div class="clear"></div>
+
+		</blockquote>
+
+
+		<!-- Blog
+		================================================== -->
+
+		<a name="template-blog" class="sectionMargin"></a>
+		<h4><strong>Blog / News</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<p>Publish articles, displayed as news or blog posts. This extends the default WordPress functionality of showing blog posts as the primary content source.</p>
+
+			<h6>Blog / News (no image) </h6>
+			<p><img src="assets/images/blog.png" alt="Blog / News (no image)"></p>
+
+			<h6>Blog / News - with Images</h6>
+			<p><img src="assets/images/blog-with-images.png" alt="Blog / News - with Images"></p>
+			<p>An example of excerpts for each issue, linked to a page for the complete issue description. This template also shows an example of including images for each issue.</p>
+
+			<h6>Blog / News - Single</h6>
+			<p><img src="assets/images/blog-single.png" alt="Blog / News - Single"></p>
+			<p>A single page for an individual blog post.</p>
+
+			<h6>Blog / News - Single with Sidebar</h6>
+			<p><img src="assets/images/blog-sidebar-right.png" alt="Blog / News - Single with Sidebar"></p>
+			<p>A single page for an individual blog post.</p>
+
+
+			<div class="clear"></div>
+
+		</blockquote>
+
+
+		<!-- Issues
+		================================================== -->
+
+		<a name="template-issues" class="sectionMargin"></a>
+		<h4><strong>Issues</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<p>Issues are a content type for displaying the key positions of a candidate or your organization. They can be published as a single page with full issue descriptions or short excerpt descriptions with links to individual pages for the full issue description.</p>
+			<p>Each issue entry is designed to support a title, description and optional image.</p>
+
+
+			<p><img src="assets/images/options-theme-default-issues.png" alt="Issues - Theme Options"></p>
+			<p>Change the setting for issues as a list or individual pages from <b>"FrontRunner &gt; Theme Options &gt; Defaults &gt; Issues Post Type"</b>.</p>
+
+			<h6>Issues - All on one page </h6>
+			<p><img src="assets/images/issues-on-one-page.png" alt="Issues - All on one page"></p>
+
+			<h6>Issues - Excerpts and linked </h6>
+			<p><img src="assets/images/issues-excerpts.png" alt="Issues - Excerpts and linked"></p>
+			<p>An example of excerpts for each issue, linked to a page for the complete issue description. This template also shows an example of including images for each issue.</p>
+
+			<h6>Issues - Single Issue Page</h6>
+			<p><img src="assets/images/issues-single.png" alt="Issues - Single Issue Page"></p>
+			<p>A single page for an individual issue.</p>
+
+
+		</blockquote>
+
+
+		<!-- Events
+		================================================== -->
+
+		<a name="template-events" class="sectionMargin"></a>
+		<h4><strong>Calendar Events</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<p>Include a list of upcoming events in a timeline style. Each event can have a title, description, location, start and end time.</p>
+
+			<h6>Events Timeline</h6>
+			<p><img src="assets/images/events-timeline.png" alt="Events Timeline"></p>
+
+		</blockquote>
+
+
+		<!-- Videos
+		================================================== -->
+
+		<a name="template-videos" class="sectionMargin"></a>
+		<h4><strong>Videos</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<p>Post YouTube videos to your site and launch them with the inline player. Currently the <strong>dynamic features such as the inline player and AJAX loading are only supported for YouTube</strong>.</p>
+
+			<h6>Videos List</h6>
+			<p><img src="assets/images/videos.png" alt="Videos"></p>
+
+			<h6>Inline YouTube Player</h6>
+			<p><img src="assets/images/videos-player.png" alt="Videos - Player"></p>
+			<p>Clicking a video launches the player and automatically starts playback.</p>
+
+		</blockquote>
+
+
+		<!-- Landing Pages
+		================================================== -->
+
+		<a name="template-landing" class="sectionMargin"></a>
+		<h4><strong>Landing Pages</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<p>Landing pages are designed to provide possible entry points for first time visitors. The initial traffic can be taken to one of these templates before the user can optionally choose to redirect to the home page, or provide the donation or newsletter sign up.</p>
+			<p>Special promitions are a popular use for these types of templates. Specifying a custom URL for an advertising campaign would allow targeted audiences to see a specific message designed by the campaign for users based on the clicked advertisement.</p>
+			<p>The landing page templates are created from <span class="file">Cover</span> page templates.</p>
+
+			<h6>Newsletter</h6>
+			<p><img src="assets/images/newsletter.png" alt="Newsletter"></p>
+
+			<h6>Donate</h6>
+			<p><img src="assets/images/donate.png" alt="Donate"></p>
+
+			<div class="clear"></div>
+		</blockquote>
+
+
+		<!-- Other Template Files
+		================================================== -->
+
+		<a name="template-misc" class="sectionMargin"></a>
+		<h4><strong>Other Templates</strong> <a href="#top">top</a></h4>
+
+		<hr>
+
+		<blockquote>
+
+			<h5 id="error-page-options">Error Page</h5>
+			<p>You can specify a custom error page using the theme options. Select the source page for the content and optionally set a template design. The error page can use either the default or cover template style.</p>
+			<p><img src="assets/images/error.png" alt="Error 404"></p>
+			<p><b>FrontRunner &gt; Theme Options &gt; Defaults &gt; Error Pages</b></p>
+			<p><img src="assets/images/options-theme-default-error.png" alt="Error Pages - Theme Options"></p>
+
+			<br><hr><br>
+
+			<h5 id="login-screen-options">Login Screen</h5>
+			<p>Edit the style of the WordPress login.</p>
+			<p><img src="assets/images/login.png" alt="Login Screen"></p>
+			<p><b>FrontRunner &gt; Theme Options &gt; Login Screen</b></p>
+			<p><img src="assets/images/options-theme-loginscreen.png" alt="Login Screen - Theme Options"></p>
+
+		</blockquote>
+
+
+		<!-- Headers
+		================================================== -->
+
+		<a name="headers" class="sectionMargin"></a>
+		<h3><strong>Headers</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<p>There are different header styles possible in the theme. Below are examples of the different styles.</p>
+
+			<h5>Large Headers (home page only)</h5>
+			<p>The large header format can have the navigation above or to the right side of the screen.</p>
+
+			<h6>Large Header with Top Navigation</h6>
+			<p><img src="assets/images/header-nav-top.png" alt="Large Header with Top Navigation"></p>
+
+			<h6>Large Header with Right Navigation</h6>
+			<p><img src="assets/images/header-nav-right.png" alt="Large Header with Right Navigation"></p>
+
+			<h5>Small Headers</h5>
+			<p>Small headers can also have an optional background image and content.</p>
+
+			<h6>Header with Background</h6>
+			<p><img src="assets/images/header-nav-with-background-2.png" alt="Header with Background 2"></p>
+
+			<h6>Header with Background and Title</h6>
+			<p><img src="assets/images/header-nav-with-background.png" alt="Header with Background"></p>
+
+			<h5>No Header (menu only)</h5>
+			<p>If no header is configured for an area of the site it will display only the navigation at the top of the page.</p>
+			<p><img src="assets/images/header-nav-only.png" alt="Header - Menu Only"></p>
+
+		</blockquote>
+
+
+		<!-- Special Features
+		================================================== -->
+
+		<a name="special-features" class="sectionMargin"></a>
+		<h3><strong>Special Features</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<p>The theme includes some special features that can be very useful. Some are listed here, others are in the <a href="#advanced">Advanced</a> section.</p>
+
+			<hr>
+
+			<h5>Sidebar Generator</h5>
+			<p>Create custom sidebars using the built in sidebar tool.</p>
+			<p><b>Appearance &gt; Sidebars</b></p>
+			<hr>
+
+		</blockquote>
+
+
+		<!-- Plugins
+		================================================== -->
+
+		<a name="plugins" class="sectionMargin"></a>
+		<h3><strong>Plugins</strong> <a href="#top">top</a></h3>
+
+		<!-- Plugins Included
+		.................................................. -->
+		<a name="plugins-included" class="sectionMargin"></a>
+		<h4><strong>Plugins Included</strong> <a href="#top">top</a></h4>
+		<hr>
+
+		<blockquote>
+
+			<p>The following plugins are included with the theme. You will be automatically prompted to install these plugins when the theme is installed. Some of the plugins are optional and will provide added functionality to the theme if you choose to install them.</p>
+
+			<!--  Political Options -->
+			<p><img src="assets/images/plugins-political-options.png" alt="Political Options Plugin"></p>
+			<h4><b>Plugin:</b> Political Options</h4>
+			<p>A custom plugin developed for this theme. It provides a way to create content on the Issues, Events and Videos sections of the website. The plugin also provides integration with Ninja Forms to include Newsletter and Donation features. This plugin is required to achieve the full functionality of the theme.</p>
+			<hr>
+
+			<!--  Simple Theme Slider  -->
+			<p><img src="assets/images/plugins-simple-theme-slider.png" alt="Simple Theme Slider Plugin"></p>
+			<h4><b>Plugin:</b> Simple Theme Slider</h4>
+			<p>A custom plugin developed for Parallelus themes. It provides a way to create basic sliders to be incorporated into the theme content.</p>
+			<hr>
+
+			<!--  Static Content Blocks  -->
+			<p><img src="assets/images/plugins-static-content-blocks.png" alt="Static Content Blocks Plugin"></p>
+			<h4><b>Plugin:</b> Static Content Blocks <span></h4>
+			<p>A custom plugin developed for Parallelus themes. It provides a way to create content used in various areas of the theme. Using a content block you can easily create reusable content that appears in multiple areas of your website. This makes it easy to update many areas of your website by editing a single content source.</p>
+			<h6>Widget Areas</h6>
+			<p>You can add a Content Block to any sidebar using the widget in <b>Appearance &gt; Widgets</b></p>
+			<h6>Shortcodes</h6>
+			<p>Using the shortcode you can add a Content Block to any content area. Set the <code>id</code> to the ID or slug for the page.</p>
+<pre><code>[static_content id="pages-sidebar-content"]</code></pre>
+
+			<p>An optional <code>showtitle</code> value can be set to "true".</p>
+
+<pre><code>[static_content id="154" showtitle="true"]</code></pre>
+
+			<p><img src="assets/images/static-block-shortcode-id.png" alt="Content Block - Shortcode ID"></p>
+			<hr>
+
+			<!--  Ninja Forms  -->
+			<p><img src="assets/images/plugins-ninja-forms.png" alt="Ninja Forms Plugin"></p>
+			<h4><b>Plugin:</b> Ninja Forms <span><a href="https://ninjaforms.com/">ninjaforms.com</a></span></h4>
+			<p>The easiest and most flexible WordPress Form builder! This plugin is used to add the contact forms.</p>
+			<h6>Documentation and Resources</h6>
+			<ul>
+				<li><a href="http://docs.ninjaforms.com/category/219-getting-started" target="_blank">Getting Started</a></li>
+				<li><a href="http://docs.ninjaforms.com/article/220-installing-ninja-forms-and-extensions" target="_blank">Installation</a></li>
+			</ul>
+			<hr>
+
+			<!--  Simple Colorbox  -->
+			<p><img src="assets/images/plugins-simple-colorbox.png" alt="Simple Colorbox Plugin"></p>
+			<h4><b>Plugin:</b> Simple Colorbox <span><a href="https://wordpress.org/plugins/simple-colorbox/">wordpress.org/plugins/simple-colorbox</a></span></h4>
+			<p>Adds a very simple Colorbox to your linked images. This plugin is intended as an easy to use alternative to other lightbox / Colorbox alternatives. Unlike most other plugins with similar functionality, this one does not have any settings or requirements whatsoever, simple install, activate and yer done.</p>
+			<p>This plugin is used to create the lightbox functionality applied to the Events pages. Clicking an event photo will launch the lightbox. If you do not use the Events section of Political Options you will not need this plugin.</p>
+
+		</blockquote>
+
+		<!-- Plugins Not Included
+		.................................................. -->
+		<a name="plugins-not-included" class="sectionMargin"></a>
+		<h4><strong>Plugins not included, but supported :-)</strong> <a href="#top">top</a></h4>
+		<hr>
+
+		<blockquote>
+
+			<p>This list includes plugins we recognize as supported by the theme. While we expect all plugins to be compatible, those listed here have been tested and verified to work.</p>
+
+			<!--  WPML  -->
+			<h4>WPML <span><a href="http://wpml.org/">http://wpml.org</a></span></h4>
+			<p>WPML makes it easy to build multilingual sites and run them. It’s powerful enough for corporate sites, yet simple for blogs. The theme supports this plugin.</p>
+			<h6>Documentation and Resources</h6>
+			<ul>
+				<li><a href="http://wpml.org/documentation/" target="_blank">Documentation</a></li>
+				<li><a href="http://wpml.org/documentation/getting-started-guide/" target="_blank">Getting Started</a></li>
+				<li><a href="http://wpml.org/faq/install-wpml/" target="_blank">Installation</a></li>
+				<li><a href="http://wpml.org/documentation/faq/" target="_blank">FAQs</a></li>
+			</ul>
+
+		</blockquote>
+
+
+		<!-- Folder Structure
+		================================================== -->
+
+		<a name="structure" class="sectionMargin"></a>
+		<h3><strong>File and Folder Structure</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<p>The theme files are located inside the <strong>"wp-content/themes/parallelus-frontrunner"</strong> directory of your WordPress install. You can access the files directly from this folder if needed. You can also update the theme by copying new files to this directory.</p>
+
+			<h4>Assets</h4>
+			<p>The <strong>images</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> files used in the theme templates are located in the <strong>"parallelus-frontrunner/assets"</strong> folder.</p>
+
+			<ul class="fa-ul" style="font-family: monospace; font-size: 14px;">
+				<li>
+					<i class="fa-li fa fa-folder-open"></i> parallelus-frontrunner
+					<ul class="fa-ul">
+						<li>
+							<i class="fa-li fa fa-folder-open"></i> assets
+							<ul class="fa-ul">
+								<li><i class="fa-li fa fa-folder"></i> css</li>
+								<li><i class="fa-li fa fa-folder"></i> fonts</li>
+								<li><i class="fa-li fa fa-folder"></i> images</li>
+								<li><i class="fa-li fa fa-folder"></i> js</li>
+								<li><i class="fa-li fa fa-folder"></i> less</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h4>Template Files</h4>
+			<p>Located in the root directory and <b>"parallelus-frontrunner/templates"</b> where we have included page templates. The root theme folder has the default WordPress templates such as page.php, archive.php and single.php. This is also where the <code>content-{type}.php</code> files are located. These files are used to load the page content area such as the title and text added from the admin into many template files. The names of these files describe their use.</p>
+
+			<h5>Template Parts</h5>
+			<p>Inside the <b>"parallelus-frontrunner/templates"</b> folder is another directory, <b>"parts"</b>, where sections of template files are saved. These sections are used to piece together template files which have options for conditionally showing or hiding content based on theme options. For example, the home page has sections included by user settings and each section is a template part with a name in the format: <code>home-section-{name}.php</code></p>
+
+			<ul class="fa-ul" style="font-family: monospace; font-size: 14px;">
+				<li>
+					<i class="fa-li fa fa-folder-open"></i> parallelus-frontrunner
+					<ul class="fa-ul">
+						<li><i class="fa-li fa fa-file-code-o"></i> 404.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> archive.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> archive-political-event.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> archive-political-video.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> front-page.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> home.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> index.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> page.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> search.php</li>
+						<li><i class="fa-li fa fa-file-code-o"></i> single.php</li>
+						<li>
+							<i class="fa-li fa fa-folder-open"></i> templates
+							<ul class="fa-ul">
+								<li><i class="fa-li fa fa-file-code-o"></i> cover.php</li>
+								<li><i class="fa-li fa fa-file-code-o"></i> cover-content-left.php</li>
+								<li><i class="fa-li fa fa-file-code-o"></i> cover-content-right.php</li>
+								<li><i class="fa-li fa fa-file-code-o"></i> cover-with-menu.php</li>
+								<li><i class="fa-li fa fa-file-code-o"></i> cover-with-page.php</li>
+								<li><i class="fa-li fa fa-file-code-o"></i> cover-with-page-and-menu.php</li>
+								<li><i class="fa-li fa fa-file-code-o"></i> page-default.php</li>
+								<li><i class="fa-li fa fa-file-code-o"></i> page-narrow.php</li>
+								<li>
+									<i class="fa-li fa fa-folder-open"></i> parts
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-file-code-o"></i> content-header.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> header.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> header-cover.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> header-large.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> home-section-action-links.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> home-section-events.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> home-section-main-content.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> home-section-slideshow.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> home-section-top-content.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> home-section-videos.php</li>
+										<li><i class="fa-li fa fa-file-code-o"></i> menu-main.php</li>
+									</ul>
+								</li>
+
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>This is not a complete list of all files in the theme folders, only those specific to the templates described above.</p>
+
+		</blockquote>
+
+
+		<!-- Advanced
+		================================================== -->
+
+		<a name="advanced" class="sectionMargin"></a>
+		<h3><strong>Advanced</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<h4>HTML Structure</h4>
+			<p>This theme has been built using the <a href="http://getbootstrap.com/" target="_blank">Bootstrap HTML, CSS and JavaScript framework</a>. As of the time of this writing, the latest version of Bootstrap (v3.3.5) was used to create the theme. We may include updates to the Bootstrap v3.x.x code as they are released. There are no plans to update the theme for major release versions such as Bootstrap v4.0. These major release versions of Bootstrap are not backwards compatible with v3 and so they are unable to be applied as an update.</p>
+
+			<p>If you need the HTML version of the theme, you can get it here: <a href="http://para.llel.us/+/get-frontrunner-html" target="_blank">Political HTML Template - FrontRunner</a></p>
+
+			<h4>Included LESS and CSS Files</h4>
+			<p>For advanced editing the theme includes the <a href="http://lesscss.org/" target="_blank">LESS</a> files to generate the Bootstrap CSS. If you know how to work with LESS files it is a powerful way to customize the theme. If you are not familiar with LESS, you can edit the CSS files directly.</p>
+			<p><strong>What is LESS?</strong></p>
+			<p>LESS is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. LESS files are compiled and output as CSS before being used with an HTML theme.</p>
+			<p>Bootstrap v3 is built with LESS. We have used it to extend the framework and create this theme. Using LESS is entirely optional and intended for advanced users or developers.</p>
+			<p><a href="http://lesscss.org/" target="_blank">Learn more about setting up and using LESS.</a></p>
+
+		</blockquote>
+
+
+		<!-- Resources
+		================================================== -->
+
+		<!-- <a name="resources" class="sectionMargin"></a>
+		<h3><strong>Resources</strong> <a href="#top">top</a></h3>
+
+		<blockquote>
+
+			<h5>Description</h5>
+			<p>...</p>
+
+			<h5>Photo Resources</h5>
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-photo"></i> <a href="#">Maybe a link to the image?</a></li>
+				<li><i class="fa-li fa fa-photo"></i> <a href="#">Maybe a link to the image?</a></li>
+				<li><i class="fa-li fa fa-photo"></i> <a href="#">Maybe a link to the image?</a></li>
+				<li><i class="fa-li fa fa-photo"></i> <a href="#">Maybe a link to the image?</a></li>
+				<li><i class="fa-li fa fa-photo"></i> <a href="#">Maybe a link to the image?</a></li>
+				<li><i class="fa-li fa fa-photo"></i> <a href="#">Maybe a link to the image?</a></li>
+			</ul>
+
+			<h5>Other Resources</h5>
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-file-code-o"></i> JavaScript and stuff...</li>
+				<li><i class="fa-li fa fa-file-code-o"></i> JavaScript and stuff...</li>
+				<li><i class="fa-li fa fa-file-code-o"></i> JavaScript and stuff...</li>
+			</ul>
+
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-font"></i> Fonts ABC</li>
+				<li><i class="fa-li fa fa-font"></i> Fonts ABC</li>
+			</ul>
+
+		</blockquote> -->
+
+
+		<!-- Support
+		================================================== -->
+
+		<a name="suport" class="sectionMargin"></a>
+		<h3>Support <a href="#top">top</a></h3>
+		<p>If you have trouble using the template or need a little help, we have a number of support tools available. Visit our <a href="http://para.llel.us/support/" target="_blank">Help Center</a> where our expert support team can answer your questions.<p>
+		<p>
+			<a href="http://para.llel.us/support/" target="_blank">Support Forums</a>
+		</p>
+
+		<hr>
+		<p>Once again, thank you so much for purchasing this template. If you need assistance or have questions please let us know and we'll be happy to help in any way we can.</p>
+		<p>Thank you,<br>
+			<strong>The Parallelus Team</strong></p>
+		<br />
+	</div>
+</div>
+</body>
+</html>
